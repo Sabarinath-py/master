@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMORA</title>
+
+    <!-- bs cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawsme cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom-css-cdn -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="body">
+
+    <!-- nav-section -->
+    <nav class="navbar navbar-expand-lg bg-body-white navbar">
+
+        <div class="container navbar">
+
+            <!-- brand-name -->
+            <a class="navbar-brand brand-name" href="#">Lumora</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- nav-links -->
+            <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
+
+                    <!-- home-button -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <!-- categories-dropdown-button -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Lifestyle & Home Decor</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion & Accessories</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Tech & Gadgets</a></li>
+                            <li><a class="dropdown-item" href="#">Premium Stationary</a></li>
+                            <li><a class="dropdown-item" href="#">Beauty and personal Care</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Others-dropdown-button -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Others
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My orders</a></li>
+                            <li><a class="dropdown-item" href="#">Return history</a></li>
+                            <li><a class="dropdown-item" href="#">Gold Membership</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+
+                    <!-- search btn -->
+                    <button class="btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <!-- cart btn -->
+                    <button class="btn" type="submit">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- end nav-section -->
+
+
+    <!-- banner-section -->
+    <div class="container-fluid text-primary text-bg-dark">
+        <img class="w-100 position-relative" src="./images/banner.png" alt="">
+        <p class="text-center text-light fs-2 position-absolute top-50 bottom-50 start-50 translate-middle">shop now</p>
+    </div>
+    <!-- end banner-section -->
+
+
+    <!-- products-section -->
+    <!-- feautured -->
+    <h3 class="my-3 text-center">Featured Products</h3>
+
+    <div class="d-flex justify-content-around">
+
+        <!-- card-1 -->
+        <div class="card text-center  position-relative" style="width: 20%;">
+
+            <img src="./images/watch.jpg" class="card-img-top " alt="...">
+            <span class="badge bg-light text-dark rounded position-absolute top-0 end-0 mt-1 me-1">sale!</span>
+
+            <div class="card-body">
+                <h5 class="card-title mb-4">LUMORA Classic Watch</h5>
+
+                <div class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="card-text">
+                    <del>$200.00</del> <ins>$149.00</ins>
+                </p>
+
+                <p class="card-text">
+                    Timeless design with a leather strap and stainless steel case. Perfect for both formal and
+                    casual wear.
+                </p>
+
+                <a href="#" class="btn btn-outline-dark mt-5">Add to cart</a>
+            </div>
+        </div>
+        <!--end card-1 -->
+
+        <!-- card-2 -->
+        <div class="card text-center position-relative" style="width: 20%;">
+
+            <img src="./images/sunglass.jpg" class="card-img-top " alt="...">
+            <span class="badge bg-light text-dark rounded position-absolute top-0 end-0 mt-1 me-1">sale!</span>
+
+            <div class="card-body">
+                <h5 class="card-title mb-4 "> LUMORA Aviator Sunglasses </h5>
+
+                <div class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="card-text">
+                    <del>$80.00</del> <ins>$59.00</ins>
+                </p>
+                <p class="card-text">
+                    Premium aviator sunglasses with antiglare lenses and UV-400 protection for all-day comfort.
+                </p>
+
+                <a href="#" class="btn btn-outline-dark mt-5">Add to cart</a>
+            </div>
+        </div>
+        <!--end card-2 -->
+
+        <!-- card-3 -->
+        <div class="card text-center position-relative" style="width: 20%;">
+
+            <img src="./images/shoe.jpg" class="card-img-top " alt="...">
+            <span class="badge bg-light text-dark rounded position-absolute top-0 end-0 mt-1 me-1">sale!</span>
+
+            <div class="card-body">
+                <h5 class="card-title mb-4">LUMORA Minimalist Sneakers</h5>
+
+                <div class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="card-text">
+                    <del>$189.00</del> <ins>$120.00</ins>
+                </p>
+                <p class="card-text">
+                    Lightweight sneakers with breathable mesh upper and cushioned sole for everyday comfort.
+                </p>
+
+                <a href="#" class="btn btn-outline-dark mt-5">Add to cart</a>
+            </div>
+        </div>
+        <!--end card-3 -->
+
+        <!-- card-4 -->
+        <div class="card text-center position-relative" style="width: 20%;">
+
+            <img src="./images/bag.jpg" class="card-img-top " alt="...">
+            <span class="badge bg-light text-dark rounded position-absolute top-0 end-0 mt-1 me-1">sale!</span>
+
+            <div class="card-body">
+                <h5 class="card-title mb-4">LUMORA Premium hand-Bag</h5>
+
+                <div class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="card-text">
+                    <del>$100.00</del> <ins>$89.00</ins>
+                </p>
+                <p class="card-text">
+                    Spacious yet stylish hand bag made from vegan leather with durable stitching.
+
+                </p>
+
+                <a href="#" class="btn btn-outline-dark mt-5">Add to cart</a>
+            </div>
+        </div>
+        <!--end card-4 -->
+
+
+
+    </div>
+
+    <!-- categories -->
+    <h3 class="my-3 text-center">categories</h3>
+
+    <div class="d-flex justify-content-around">
+
+        <!-- card-1 -->
+        <div class="card d-flex justify-content-center" style="width: 15%;">
+            <img src="./images/varun-gaba-dcgB3CgidlU-unsplash.jpg" class="card-img-top position-relative" alt="...">
+
+            <a href="#" class="btn position-absolute top-50 bottom-50 start-50 translate-middle cat-btn">Shop-now</a>
+
+        </div>
+        <!--end card-1 -->
+
+        <!-- card-2 -->
+        <div class="card d-flex justify-content-center" style="width: 15%;">
+            <img src="./images/c-d-x-PDX_a_82obo-unsplash.jpg" class="card-img-top position-relative" alt="...">
+
+            <a href="#" class="btn position-absolute top-50 bottom-50 start-50 translate-middle cat-btn">Shop-now</a>
+
+        </div>
+        <!--end card-2 -->
+
+        <!-- card-3 -->
+        <div class="card d-flex justify-content-center" style="width: 15%;">
+            <img src="./images/charlesdeluvio-1-nx1QR5dTE-unsplash.jpg" class="card-img-top position-relative"
+                alt="...">
+
+            <a href="#" class="btn position-absolute top-50 bottom-50 start-50 translate-middle cat-btn">Shop-now</a>
+
+        </div>
+        <!--end card-3 -->
+
+        <!-- card-4 -->
+        <div class="card d-flex justify-content-center" style="width: 15%;">
+            <img src="./images/domino-studio-164_6wVEHfI-unsplash.jpg" class="card-img-top position-relative" alt="...">
+
+            <a href="#" class="btn position-absolute top-50 bottom-50 start-50 translate-middle cat-btn">Shop-now</a>
+
+        </div>
+        <!--end card-4 -->
+
+        <!-- card-5 -->
+        <div class="card d-flex justify-content-center" style="width: 15%;">
+            <img src="./images/mitzie-organics-dnstpPqCBbw-unsplash.jpg" class="card-img-top position-relative"
+                alt="...">
+
+            <a href="#" class="btn position-absolute top-50 bottom-50 start-50 translate-middle cat-btn">Shop-now</a>
+
+        </div>
+        <!--end card-5 -->
+
+
+
+    </div>
+    <!--end products-section -->
+
+
+    <!-- footer-section -->
+    <div class="card-fluid mt-5 footer">
+        <div class="d-flex justify-content-evenly align-items-center text-center">
+            <div class="card-body">
+                <h6 class="card-title">About-us</h6>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Contact-us</h6>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Privacy-policy</h6>
+            </div>
+        </div>
+    </div>
+    <!--end footer-section -->
+
+
+</body>
+
+</html>
