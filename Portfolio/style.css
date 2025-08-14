@@ -1,0 +1,33 @@
+:root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --accent-color: #06b6d4;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --gradient-2: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+        }
+body{
+    height: 100vh;
+    background-color: var(--dark-bg);
+}
+.dark-bg{
+    background-color: var(--dark-bg);
+}
+.nav-item > a{
+    color: var(--text-secondary);
+
+}
+.gradient{
+    color: var(--secondary-color);
+}
+.nav-link:hover{
+    color: var(--text-primary);
+    transform: scale(1.1);
+}
+.gradient:hover{
+    color: var(--text-primary);
+    transform: scale(2.2);
+}
