@@ -30,7 +30,7 @@
 
 <body>
 
-    <!-- navsection-start -->
+     <!-- nav-section -->
     <nav class="navbar navbar-expand-lg bg-body-white navbar">
 
         <div class="container navbar">
@@ -66,12 +66,9 @@
                             Categories
                         </a>
 
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu ">
                             <li><a class="dropdown-item" href="#">Lifestyle & Home Decor</a></li>
                             <li><a class="dropdown-item" href="#">Fashion & Accessories</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="#">Tech & Gadgets</a></li>
                             <li><a class="dropdown-item" href="#">Premium Stationary</a></li>
                             <li><a class="dropdown-item" href="#">Beauty and personal Care</a></li>
@@ -87,7 +84,7 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">My orders</a></li>
+                            <li><a class="dropdown-item" href="./my_orders.html">My orders</a></li>
                             <li><a class="dropdown-item" href="#">Return history</a></li>
                             <li><a class="dropdown-item" href="#">Gold Membership</a></li>
                         </ul>
@@ -105,123 +102,125 @@
                     </button>
 
                     <!-- cart btn -->
-                    <button class="btn" type="submit">
+                    <a href="./cart.html" class="btn">
                         <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
-
+                    </a>
+                    <!-- Account btn -->
+                    <a href="./sign-up.html" class="btn">
+                        <i class="fa-solid fa-user"></i> </a>
                 </form>
 
             </div>
 
         </div>
     </nav>
-    <!-- navsection-end -->
+    <!-- end nav-section -->
 
 
-    <!-- cart-section start -->
-    <div class="cart-container my-5">
+  <!-- cart-section start -->
+<div class="cart-container my-5">
 
-        <h3 class="card-title text-center">Cart Summary</h3>
+    <h3 class="card-title text-center">Cart Summary</h3>
 
-        <div class="card shadow-lg mx-auto my-3 Cart-card w-50 p-3">
-            <div class="card-body mx-auto   w-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
 
-                <h5 class="card-title"> Your Shopping Cart</h5>
+                <div class="card shadow-lg my-3 Cart-card p-3">
+                    <div class="card-body w-100">
 
-                <hr class="cart-divider">
+                        <h5 class="card-title"> Your Shopping Cart</h5>
 
-                <!-- product-column start -->
-                <div class="product-column text-center">
+                        <hr class="cart-divider">
 
-                    <!-- first-row start -->
-                    <div class="row my-3">
-                        <div class="col-2 d-flex justify-content-center align-items-center">
-                            <img src="./images/bag.jpg" alt="#" class="w-75">
+                        <!-- product-column start -->
+                        <div class="product-column text-center">
+
+                            <!-- first-row start -->
+                            <div class="row my-3">
+                                <div class="col-3 col-sm-2 d-flex justify-content-center align-items-center">
+                                    <img src="./images/bag.jpg" alt="#" class="img-fluid">
+                                </div>
+
+                                <div class="col-9 col-sm-6 d-flex justify-content-center align-items-center">
+                                    <p class="my-3">LUMORA premium Handbag</p>
+                                </div>
+
+                                <div class="col-6 col-sm-2 d-flex justify-content-center align-items-center">
+                                    <p class="my-3">Q</p>
+                                </div>
+
+                                <div class="col-6 col-sm-2 d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-xmark icon p-1"></i>
+                                </div>
+                            </div>
+                            <!-- first-row end -->
+
+                            <!-- second-row start -->
+                            <div class="row my-3">
+                                <div class="col-3 col-sm-2 d-flex justify-content-center align-items-center">
+                                    <img src="./images/shoe.jpg" alt="#" class="img-fluid">
+                                </div>
+
+                                <div class="col-9 col-sm-6 d-flex justify-content-center align-items-center">
+                                    <p class="my-3">LUMORA premium Sneakers</p>
+                                </div>
+
+                                <div class="col-6 col-sm-2 d-flex justify-content-center align-items-center">
+                                    <p class="my-3">Q</p>
+                                </div>
+
+                                <div class="col-6 col-sm-2 d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-xmark icon p-1"></i>
+                                </div>
+                            </div>
+                            <!-- second-row end -->
+
+                        </div>
+                        <!-- product-column end -->
+
+
+                        <!-- price-label start -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-medium cart-label">Subtotal</span>
+                            <span class="price">$99.98</span>
                         </div>
 
-                        <div class="col-6 d-flex justify-content-center align-items-center">
-                            <p class="my-3">LUMORA premium Handbag</p>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-medium cart-label">Tax</span>
+                            <span class="price">$53</span>
                         </div>
 
-                        <div class="col-2 d-flex justify-content-center align-items-center">
-                            <p class="my-3">Q</p>
+                        <hr class="cart-divider">
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-medium cart-label">Total</span>
+                            <span class="price">$99.98</span>
                         </div>
 
-                        <div class="col-2 d-flex justify-content-center align-items-center">
-                            <i class="fa-solid fa-xmark icon p-1"></i>
+                        <!-- cart-btn start -->
+                        <div class="text-center">
+                            <button type="button" class="btn cart-btn mb-3">Proceed to checkout</button>
                         </div>
+                        <!-- cart-btn end -->
+
+                        <hr class="cart-divider">
+
+                        <!-- cart-footer start -->
+                        <div class="d-flex justify-content-around mb-2">
+                            <span class="fw-light">returns policy</span>
+                            <span class="fw-light">help</span>
+                        </div>
+                        <!-- cart-footer end -->
+
                     </div>
-                    <!-- first-row end -->
-
-                    <!-- second-row start -->
-                    <div class="row my-3">
-                        <div class="col-2 d-flex justify-content-center align-items-center">
-                            <img src="./images/shoe.jpg" alt="#" class="w-75">
-                        </div>
-
-                        <div class="col-6 d-flex justify-content-center align-items-center">
-                            <p class="my-3">LUMORA premium Sneakers</p>
-                        </div>
-
-                        <div class="col-2 d-flex justify-content-center align-items-center">
-                            <p class="my-3">Q</p>
-                        </div>
-
-                        <div class="col-2 d-flex justify-content-center align-items-center">
-                            <i class="fa-solid fa-xmark icon p-1"></i>
-                        </div>
-                    </div>
-                    <!-- second-row end -->
-
-                  
-                <!-- product-column end -->
-
-
-               <!-- price-label start -->
-                <!-- Subtotal-row start -->
-                <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-medium cart-label">Subtotal</span>
-                    <span class="price">$99.98</span>
                 </div>
-                <!-- Subtotal-row end -->
-
-                <!-- Tax-row start -->
-                <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-medium cart-label">Tax</span>
-                    <span class="price">$53</span>
-                </div>
-                <!-- Tax-row end -->
-
-                <hr class="cart-divider">
-
-                <!-- Total-row start -->
-                <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-medium cart-label">Total</span>
-                    <span class="price">$99.98</span>
-                </div>
-                <!-- Total-row end -->
-
-                <!-- cart-btn start -->
-                <div class="div text-center ">
-                    <button type="button" class="btn cart-btn mb-3">Proceed to checkout</button>
-                </div>
-                <!-- cart-btn end -->
-
-               <!-- price-label end -->
-
-                <hr class="cart-divider">
-
-                <!-- cart-footer start -->
-                <div class="d-flex justify-content-around mb-2">
-                    <span class="fw-light">returns policy</span>
-                    <span class="fw-light">help</span>
-                </div>
-                <!-- cart-footer end -->
-
             </div>
         </div>
     </div>
-    <!-- cart-section end -->
+</div>
+<!-- cart-section end -->
+
 
 
 

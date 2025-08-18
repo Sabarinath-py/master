@@ -33,51 +33,126 @@
 
 <body>
 
-    <!-- navsection-start -->
-    <nav class="navbar navbar-expand-lg">
+ <!-- nav-section -->
+    <nav class="navbar navbar-expand-lg bg-body-white navbar">
 
-        <div class="container">
+        <div class="container navbar">
 
-            <a class="navbar-brand fw-bold" href="#">Lumora</a>
+            <!-- brand-name -->
+            <a class="navbar-brand brand-name" href="#">Lumora</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- nav-links -->
+            <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
+
+                    <!-- home-button -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">All Products</a>
+                    </li>
+
+                    <!-- categories-dropdown-button -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#">Lifestyle & Home Decor</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Tech & Gadgets</a></li>
+                            <li><a class="dropdown-item" href="#">Premium Stationary</a></li>
+                            <li><a class="dropdown-item" href="#">Beauty and personal Care</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Others-dropdown-button -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Others
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./my_orders.html">My orders</a></li>
+                            <li><a class="dropdown-item" href="#">Return history</a></li>
+                            <li><a class="dropdown-item" href="#">Gold Membership</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+
+                    <!-- search btn -->
+                    <button class="btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <!-- cart btn -->
+                    <a href="./cart.html" class="btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <!-- Account btn -->
+                    <a href="./sign-up.html" class="btn">
+                        <i class="fa-solid fa-user"></i> </a>
+                </form>
+
+            </div>
 
         </div>
-
     </nav>
-    <!-- navsection-end -->
+    <!-- end nav-section -->
 
-    <!-- sign-in start -->
-    <div class="card shadow-lg mx-auto my-5 p-4 signin-card">
-        <div class="card-body mx-auto">
+  <!-- sign-in start -->
+<div class="card shadow-lg mx-auto my-5 p-4 signin-card col-lg-4 col-md-6 col-sm-10">
+    <div class="card-body mx-auto">
 
-            <h3 class="my-2 signin-head text-center">Sign IN</h3>
+        <h3 class="my-2 signin-head text-center">Sign IN</h3>
 
-            <form action="" class="my-4">
+        <form action="" class="my-4">
 
+            <label for="E-mail" class="mt-2">E-mail</label> <br>
+            <input type="email" placeholder="E-mail" class="form-control"> <br>
 
-                <label for="E-mail" class="mt-2">E-mail</label> <br>
-                <input type="email" placeholder="E-mail" class="w-100"> <br>
+            <label for="password" class="mt-2">Password</label> <br>
+            <input type="password" placeholder="Password" class="form-control"> <br>
 
-                <label for="password" class="mt-2">Password</label> <br>
-                <input type="password" placeholder="Password" class="w-100"> <br>
+        </form>
 
-            </form>
-
-            <div class="d-flex justify-content-center my-3">
-                <button class="btn signin-btn w-50 mx-auto" type="submit">Sign in</button>
-            </div>
-
-            <p class="text-center comment">Dont't have an account? <a href="sign-up.html">Sign up</a></p>
-
-            <p class="text-center text-secondary">or</p>
-
-            <div class="d-flex justify-content-center my-3">
-                <button class="btn w-ax mx-auto google-btn" type="submit"><i class="fa-brands fa-google"></i> Continue
-                    with Google account</button>
-            </div>
-
+        <div class="d-flex justify-content-center my-3">
+            <a href="./index.html" class="btn signin-btn w-50 mx-auto">Sign In</a>
         </div>
+
+        <p class="text-center comment">Dont't have an account? <a href="sign-up.html">Sign up</a></p>
+
+        <p class="text-center text-secondary">or</p>
+
+        <div class="d-flex justify-content-center my-3">
+            <button class="btn w-100 google-btn" type="submit">
+                <i class="fa-brands fa-google"></i> Continue with Google account
+            </button>
+        </div>
+
     </div>
-    <!-- sign-in end -->
+</div>
+<!-- sign-in end -->
+
 
 </body>
 

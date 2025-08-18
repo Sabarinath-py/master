@@ -32,50 +32,125 @@
 
 <body>
 
-        <!-- navsection-start -->
-    <nav class="navbar navbar-expand-lg">
+ <!-- nav-section -->
+    <nav class="navbar navbar-expand-lg bg-body-white navbar">
 
-        <div class="container nav-container">
+        <div class="container navbar">
 
-            <a class="navbar-brand fw-bold" href="#">Lumora</a>
+            <!-- brand-name -->
+            <a class="navbar-brand brand-name" href="#">Lumora</a>
 
-        </div>
-
-    </nav>
-    <!-- navsection-end -->
-
-    <!-- otp start -->
-    <div class="card shadow-lg mx-auto my-5 p-4  otp-card ">
-        <div class="card-body mx-auto text-center">
-
-            <h3 class="my-2 otp-head">Check your email</h3>
-
-            <p class="otp-sub mt-3">Please enter the four digit verification code we sent to
-                <strong>example@gmail.com</strong>
-            </p>
-
-            <div class="container otp-container d-flex justify-content-center align-items-center my-5 ">
-                <div class="otp-container d-flex gap-3">
-                    <input type="text"  class="otp-input  text-center">
-                    <input type="text"  class="otp-input  text-center">
-                    <input type="text"  class="otp-input  text-center">
-                    <input type="text"  class="otp-input  text-center">
-                </div>
-            </div>
-
-            <button type="submit" class="btn btn-confirm">
-                Confirm
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <p class="otp-sub mt-3">
-                Didn't get the email? Resent in 00:41
-            </p>
+            <!-- nav-links -->
+            <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
 
-            <p class="otp-sub"><a href="sign-up.html"><i class="fa-solid fa-arrow-left-long"></i></a> go back</p>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
+
+                    <!-- home-button -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">All Products</a>
+                    </li>
+
+                    <!-- categories-dropdown-button -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#">Lifestyle & Home Decor</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Tech & Gadgets</a></li>
+                            <li><a class="dropdown-item" href="#">Premium Stationary</a></li>
+                            <li><a class="dropdown-item" href="#">Beauty and personal Care</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Others-dropdown-button -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Others
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./my_orders.html">My orders</a></li>
+                            <li><a class="dropdown-item" href="#">Return history</a></li>
+                            <li><a class="dropdown-item" href="#">Gold Membership</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+
+                    <!-- search btn -->
+                    <button class="btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <!-- cart btn -->
+                    <a href="./cart.html" class="btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <!-- Account btn -->
+                    <a href="./sign-up.html" class="btn">
+                        <i class="fa-solid fa-user"></i> </a>
+                </form>
+
+            </div>
 
         </div>
+    </nav>
+    <!-- end nav-section -->
+
+ <!-- otp start -->
+<div class="card shadow-lg mx-auto my-5 p-4 otp-card">
+  <div class="card-body mx-auto text-center">
+
+    <h3 class="my-2 otp-head">Check your email</h3>
+
+    <p class="otp-sub mt-3">Please enter the four digit verification code we sent to
+      <strong>example@gmail.com</strong>
+    </p>
+
+    <div class="container otp-container d-flex justify-content-center align-items-center my-5">
+      <div class="otp-container d-flex gap-3 flex-lg-row flex-md-row flex-sm-column">
+        <input type="text" class="otp-input text-center">
+        <input type="text" class="otp-input text-center">
+        <input type="text" class="otp-input text-center">
+        <input type="text" class="otp-input text-center">
+      </div>
     </div>
-    <!-- otp end -->
+
+    <a href="./sign-in.html" class="btn signup-btn w-50 mx-auto">Sign Up</a>
+
+    <p class="otp-sub mt-3">
+      Didn't get the email? Resent in 00:41
+    </p>
+
+    <p class="otp-sub">
+      <a href="sign-up.html"><i class="fa-solid fa-arrow-left-long"></i></a> go back
+    </p>
+
+  </div>
+</div>
+<!-- otp end -->
+
 
 
 </body>
