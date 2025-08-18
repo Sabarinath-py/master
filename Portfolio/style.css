@@ -23,12 +23,14 @@ nav {
     height: 10%;
     z-index: 2000;
 }
+
 .navbar-brand {
     color: var(--secondary-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
@@ -61,9 +63,11 @@ nav {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.hero-container{
-    margin-top:5%;
+
+.hero-container {
+    margin-top: 5%;
 }
+
 .hero {
     color: var(--text-secondary);
     font-family: 'Source Sans Pro', sans-serif;
@@ -127,7 +131,7 @@ img:hover {
 .about-container:hover {
     transform: translateY(-5px);
     background-color: #233045;
-        color: var(--text-primary);
+    color: var(--text-primary);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -173,4 +177,88 @@ img:hover {
     background: var(--gradient-1);
     border: none;
 }
+
 /* technicalsection-end */
+
+
+/* project-section start */
+.card-top-bg {
+    background: var(--gradient-2);
+    height: 200px;
+}
+
+.proj-tools {
+    background-color: #272b57;
+    color: var(--primary-color);
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.project {
+    background: var(--card-bg);
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.proj-para {
+    color: var(--text-secondary);
+}
+
+.proj-link {
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.proj-link:hover {
+    color: var(--secondary-color);
+    transform: translate(4px);
+}
+
+/* project-section end */
+
+
+/* contact-section Start */
+
+.contact-head {
+    background: var(--gradient-1);
+    font-family: 'Poppins', 'Inter', Arial, sans-serif;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact {
+    color: var(--text-secondary);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 200px;
+}
+
+.contact-container {
+    background: var(--card-bg);
+    color: var(--text-secondary);
+    width: 55%;
+}
+
+.contact-details{
+
+}
+
+.btn-contact{
+    background:var(--primary-color);
+    color: var(--text-primary);
+    font-size: 20px;
+    border-radius: 100%;
+}
+/* contact-section end */
+
+
+.footer{
+    background: var(--card-bg);
+    color: var(--text-secondary);
+}
+
+.footer-content{
+    font-size: 18px;
+
+}
