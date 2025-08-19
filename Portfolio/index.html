@@ -41,7 +41,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
+            <div class="navbar-collapse collapse-show nav-list" id="navbarSupportedContent">
 
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-list">
 
@@ -49,16 +49,16 @@
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#technical">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
 
                 </ul>
@@ -106,7 +106,7 @@
 
 
     <!-- About-me start -->
-    <div class="about">
+    <div id="about" class="about">
 
         <h2 class="fw-bold text-center display-6 about-head">About Me</h2>
 
@@ -144,7 +144,7 @@
 
 
     <!-- technical-skills start -->
-    <div class="container text-light mt-5">
+    <div id="technical" class="container text-light mt-5">
 
         <h2 class="tech-head text-center fw-bold text-center display-6">Technical Skills</h2>
 
@@ -225,7 +225,7 @@
 
 
     <!-- project-section start -->
-    <div class="container text-light mt-5">
+    <div id="projects" class="container text-light mt-5">
 
         <h2 class="tech-head text-center fw-bold display-6 mb-5">Featured Projects</h2>
 
@@ -366,31 +366,41 @@
 
 
     <!-- contact-section-start -->
-    <div class="contact">
+    <div id="contact" class="contact">
 
         <h2 class="fw-bold text-center display-6 contact-head">Get In Touch</h2>
 
         <div class="container contact-container rounded-4 p-5 text-start my-5 ">
 
-            <p class="my-4 lh-md fs-lg-5 fs-md-5 ms-2 text-center contact-para">
+            <p class="my-4 lh-md fs-5 ms-2 text-center contact-para">
                 I'm always open to discussing new opportunities, interesting projects, or just having a chat about
                 technology. Feel free to reach out!
             </p>
 
             <!-- contact details -->
-            <div class="container">
-                <div class="row text-center justify-content-center contact-details">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <i class="fa-solid fa-envelope me-2"></i> <span>sabarinath.py@gmail.com</span>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 mt-4">
-                        <i class="fa-solid fa-phone me-2"></i> +91 8089 844 630
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3 mt-4">
-                        <i class="fa-solid fa-location-dot me-2"></i> Kochi, Kerala, India
-                    </div>
-                </div>
-            </div>
+<div class="container">
+  <div class="row text-center justify-content-center align-items-center contact-details">
+    
+    <!-- Email -->
+    <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-3 d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-envelope me-2 fs-5"></i>
+      <span class="fs-6 fs-md-5">sabarinath.py@gmail.com</span>
+    </div>
+    
+    <!-- Phone -->
+    <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-3 d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-phone me-2 fs-5"></i>
+      <span class="fs-6 fs-md-5">+91 8089 844 630</span>
+    </div>
+    
+    <!-- Location -->
+    <div class="col-lg-4 col-md-12 col-sm-12 mt-4 mb-3 d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-location-dot me-2 fs-5"></i>
+      <span class="fs-6 fs-md-5">Kochi, Kerala, India</span>
+    </div>
+    
+  </div>
+</div>
 
 
             <!-- contact-btn start -->
