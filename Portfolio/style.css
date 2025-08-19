@@ -192,7 +192,7 @@ img:hover {
     color: var(--primary-color);
     border-radius: 999px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .project {
@@ -268,6 +268,7 @@ img:hover {
     box-shadow: 0 0 15px var(--text-primary),
         0 0 30px var(--primary-color);
 }
+
 
 /* contact-section end */
 
